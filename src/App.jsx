@@ -1,14 +1,18 @@
 import { useState } from 'react'
 import FriendsList from './components/FriendsList'
+import FormAddFriend from './components/FormAddFriend'
+import Button from './components/Button'
+import FormSplitBill from './components/FormSplitBill'
 
 function App() {
-    const [count, setCount] = useState(0)
-
     return (
         <div className='app'>
             <div className='sidebar'>
                 <FriendsList />
+                <FormAddFriend />
+                <Button>Add friend</Button>
             </div>
+            <FormSplitBill />
         </div>
     )
 }
