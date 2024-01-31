@@ -23,6 +23,7 @@ function App() {
         setSelectedFriend((prevSelected) =>
             prevSelected?.id === friend.id ? null : friend
         )
+        setShowAddFriend(false)
     }
 
     return (
