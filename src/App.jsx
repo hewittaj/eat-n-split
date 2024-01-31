@@ -14,7 +14,8 @@ function App() {
     }
 
     function handleAddFriend(friend) {
-        setFriends((prevFriends) => [...friends, friend])
+        setFriends((prevFriends) => [...prevFriends, friend])
+        setShowAddFriend(false)
     }
 
     return (
