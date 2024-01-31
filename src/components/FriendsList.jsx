@@ -1,6 +1,7 @@
-import friends from '../initialFriends'
+/* eslint-disable react/prop-types */
 import Friend from './Friend'
-function FriendsList() {
+function FriendsList(props) {
+    const { friends } = props
     return (
         <ul>
             {friends.map((friend) => (
